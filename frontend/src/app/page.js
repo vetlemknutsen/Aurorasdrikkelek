@@ -1,19 +1,47 @@
 "use client";
 
-import { useEffect, useState } from 'react';
+import { useState } from "react";
+import Link from 'next/link';
+import SettingsIcon from '@mui/icons-material/Settings';
 
-export default function Home() {
-    const [message, setMessage] = useState('');
+export default function HomePage() {
+    const [isInfoVisible, setInfoVisible] = useState(false);
 
-    useEffect(() => {
-        fetch('https://aurorasdrikkelek-production.up.railway.app/api/hello')
-            .then((res) => res.json())
-            .then((data) => setMessage(data.message));
-    }, []);
+    const toggleInfo = () => {
+        setInfoVisible(!isInfoVisible);
+    };
 
     return (
-        <div className="flex justify-center items-center h-screen">
-            <h1 className="text-3xl font-bold">{message || 'Loading...'}</h1>
+        <div className="centered-container">
+            <img src="/champis.png" alt="Champagne" className="champagne"/>
+            <img src="/logo.png" alt="Logo" className="logo"/>
+
+            <div className="grid-container">
+                <Link href="/roulette" className="game-button bg-teal">Roulette</Link>
+                <Link href="/jeg-har-aldri" className="game-button bg-pink">Jeg har aldri</Link>
+                <Link href={'#'} className="game-button bg-yellow">Spill 3</Link>
+                <Link href={'#'} className="game-button bg-indigo">Spill 4</Link>
+                <Link href={'#'} className="game-button bg-blue">Spill 5</Link>
+                <Link href={'#'} className="game-button bg-lime">Spill 6</Link>
+            </div>
+
+            <button
+                onClick={toggleInfo}
+                className="info-button"
+            >
+                <SettingsIcon/>
+            </button>
+
+            {isInfoVisible && (
+                <div className="info-box">
+                    <p>
+                        Velkommen til "Aurora's Drikkelek" - den perfekte appen for å sette i gang kvelden!
+                        Aurora's drikkelek inneholder både gamle og nye drikkeleker, samlet på ett sted!
+                        Instruksjoner for hver drikkelek finner du inne på info-knappen på lekene.
+                        Husk å drikke med måte og behandle dine meddeltakere med respekt! Aldersgrense: 18+
+                    </p>
+                </div>
+            )}
         </div>
     );
 }
