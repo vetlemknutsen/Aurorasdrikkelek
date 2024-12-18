@@ -51,7 +51,7 @@ a {
   justify-content: center;
   align-items: center;
   padding: 20px;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: bold;
   text-transform: uppercase;
   border-radius: 10px;
@@ -116,7 +116,7 @@ a {
 .info-button {
   position: absolute;
   top: 20px;
-  right: 20px;
+  left: 20px;
   width: 50px;
   height: 50px;
   display: flex;
@@ -233,24 +233,29 @@ a {
   }
 
   .game-button {
-    font-size: 0.9rem;
+    font-size: 1rem;
     padding: 10px;
     height: 50px;
   }
 
+  .game-button:not(.exclude-font-size) {
+    font-size: 1.2rem;
+  }
+
   .grid-container {
     gap: 3rem;
-    margin-top: -30%;
+    row-gap: 7rem;
   }
 
   .logo {
-    width: 60%;
+    width: 75%;
+    left: 53%;
   }
 
   .champagne {
-    width: 20%;
-    left: 73%;
-    top: 5%;
+    width: 25%;
+    left: 80%;
+    top: 2%;
   }
 
 
@@ -258,5 +263,6 @@ a {
     width: 35px;
     height: 35px;
     font-size: 22px;
+
   }
 }
