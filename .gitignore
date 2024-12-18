@@ -3,6 +3,8 @@ node_modules/
 # Ignore log files
 *.log
 
+.idea/
+
 # Ignore env files (som inneholder sensitive data)
 .env
 
