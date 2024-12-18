@@ -1,0 +1,14 @@
+node_modules/
+
+# Ignore log files
+*.log
+
+# Ignore env files (som inneholder sensitive data)
+.env
+
+# Ignore build directories if they exist
+dist/
+build/
+
+# Ignore coverage reports (om du bruker testdekningsverktøy)
+coverage/
