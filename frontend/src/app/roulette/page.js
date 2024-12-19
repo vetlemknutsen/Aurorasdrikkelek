@@ -3,6 +3,9 @@
 import { useState, useEffect, useRef } from "react";
 import HelpOutlineIcon from "@mui/icons-material/HelpOutline";
 import {IconButton, Tooltip} from "@mui/material";
+import styles from "@/app/jeg-har-aldri/jeg-har-aldri.module.css";
+import styles2 from "./roulette.module.css"
+import Link from "next/link";
 
 
 export default function Home() {
@@ -10,6 +13,7 @@ export default function Home() {
     const [color, setColor] = useState("white");
     const [currentInterval, setCurrentInterval] = useState(0);
     const [showInfo, setShowInfo] = useState(false);
+    const [hasStarted, setHasStarted] = useState(false);
     const intervals = [100, 100, 200,200 ,200,200,300,300, 300,300,500, 500,600,600,700,700, 900, 900];
     const timeoutRef = useRef(null);
     const stopTimeoutRef = useRef(null);
@@ -22,6 +26,7 @@ export default function Home() {
         setIsRunning(true);
         setColor("white");
         setCurrentInterval(0);
+        setHasStarted(true);
 
         const blink = (index) => {
             if (index < intervals.length) {
@@ -35,6 +40,7 @@ export default function Home() {
                 const randomValue = Math.random();
                 setColor(randomValue <= 0.4 ? "red" : "green");
                 setIsRunning(false);
+
             }
         };
 
@@ -62,30 +68,37 @@ export default function Home() {
 
 
     return (
-        <div style={{ backgroundColor: color, height: "100vh", display: "flex", justifyContent: "center", alignItems: "center" }}>
+        <div className={hasStarted ? '' : styles2.background} style={{ backgroundColor: color, height: "100vh", display: "flex", justifyContent: "center", alignItems: "center" }}>
             <div style={{ textAlign: "center" }}>
                 {!isRunning ? (
-                    <button onClick={startRoulette} style={{ padding: "20px", fontSize: "20px" }}>
+                    <button onClick={startRoulette} style={{ padding: "20px", fontSize: "20px", borderRadius: "500px" }}>
                         Start
                     </button>
                 ) : (
                     <p style={{ fontSize: "24px", color: "#fff" }}></p>
                 )}
             </div>
+            {!isRunning && (
+                <Link href="/" className={styles2.backButton2}>
+                    Tilbake
+                </Link>
+            )}
+            {!isRunning && (
+
             <Tooltip title="Info" arrow>
                 <IconButton
                     onClick={toggleInfo}
                     style={{
                         position: "absolute",
-                        top: "16px",
-                        left: "16px",
-                        color: "#6aaaf7", // Icon color
-                        backgroundColor: "transparent", // No background color
+                        top: "25px",
+                        left: "20px",
+                        color: "black",
+                        backgroundColor: "white",
 
-                        borderRadius: "50%", // Make it round
-                        padding: "6px", // Adjust padding to make the circle fit better
-                        width: "40px", // Size of the button
-                        height: "40px", // Size of the button
+                        borderRadius: "50%",
+                        padding: "0px",
+                        width: "20px",
+                        height: "20px",
                         display: "flex",
                         justifyContent: "center",
                         alignItems: "center",
@@ -95,7 +108,9 @@ export default function Home() {
                 </IconButton>
             </Tooltip>
 
-            {/* Info Text */}
+
+            )}
+
             {showInfo && (
                 <div style={{
                     position: "absolute",
