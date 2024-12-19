@@ -5,8 +5,7 @@ node_modules/
 
 .idea/
 
-# Ignore env files (som inneholder sensitive data)
-.env
+
 
 # Ignore build directories if they exist
 dist/
