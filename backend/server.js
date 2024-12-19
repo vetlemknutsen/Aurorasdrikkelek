@@ -6,8 +6,9 @@ const router = require("./index");
 const app = express();
 
 app.use(cors({
-    origin: 'https://www.aurorasdrikkelek.no',
+    origin: '*',
 }));
+app.options('*', cors());
 
 const dbUrl = process.env.MONGO_PUBLIC_URL;
 
