@@ -49,7 +49,7 @@ export default function JegHarAldri() {
                         initial={{x: 300, opacity: 0}}
                         animate={{x: 0, opacity: 1}}
                         transition={{
-                            duration: 0.4,
+                            duration: 0.2,
                             ease: "linear",
                         }}
                     >
