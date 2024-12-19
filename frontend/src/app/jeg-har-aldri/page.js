@@ -13,15 +13,20 @@ export default function JegHarAldri() {
     const [cards, setCards] = useState([]);
 
     useEffect(() => {
-        fetch(`${backend_url}/api/games/Jeg%20har%20aldri/cards`)
-            .then((response) => {
-                if (!response.ok) {
-                    throw new Error("Failed to fetch cards");
-                }
-                return response.json();
+        fetch('https://aurorasdrikkelek-production.up.railway.app/api/games/Jeg%20har%20aldri/cards', {
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+        })
+            .then(response => response.json())
+            .then(data => {
+                console.log('Data mottatt:', data);
+                setCards(data.cards);
             })
-            .then((data) => setCards(data.cards))
-            .catch((error) => console.error("Error fetching cards:", error));
+            .catch(error => {
+                console.error('Feil under sending av forespørsel:', error);
+            });
     }, []);
 
     const swipe = (direction) => {
