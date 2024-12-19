@@ -5,7 +5,13 @@ const router = require("./index"); // import index.js
 
 const app = express();
 
-app.use(cors());
+const corsOptions = {
+    origin: 'https://www.aurorasdrikkelek.no',
+    methods: 'GET,POST,PUT,DELETE',
+    allowedHeaders: 'Content-Type,Authorization'
+};
+
+app.use(cors(corsOptions));
 
 const dbUrl = process.env.MONGO_PUBLIC_URL;
 
