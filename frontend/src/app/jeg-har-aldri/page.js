@@ -1,13 +1,12 @@
 "use client";
 
-
 import {useEffect, useState} from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import styles from "./jeg-har-aldri.module.css";
 import { ChevronLeft, ChevronRight } from "@mui/icons-material";
 import Link from "next/link";
 
-const backend_url = "aurorasdrikkelek-production.up.railway.app";
+const backend_url = "https://aurorasdrikkelek-production.up.railway.app";
 
 export default function JegHarAldri() {
     const [index, setIndex] = useState(0);
