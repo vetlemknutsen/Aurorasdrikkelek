@@ -6,7 +6,7 @@ const router = require("./index");
 const app = express();
 
 app.use(cors({
-    origin: 'aurorasdrikkelek-f7zwy6a2h-vetlemknutsens-projects.vercel.app',
+    origin: 'https://www.aurorasdrikkelek.no',
 }));
 
 const dbUrl = process.env.MONGO_PUBLIC_URL;
