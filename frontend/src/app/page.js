@@ -35,7 +35,7 @@ export default function HomePage() {
             {isInfoVisible && (
                 <div className="info-box">
                     <p>
-                        Velkommen til "Aurora's Drikkelek" - den perfekte appen for å sette i gang kvelden!
+                        Velkommen til "Aurora's Drikkelek" - det perfekte nettsted for å sette i gang kvelden!
                         Aurora's drikkelek inneholder både gamle og nye drikkeleker, samlet på ett sted!
                         Instruksjoner for hver drikkelek finner du inne på info-knappen på lekene.
                         Husk å drikke med måte og behandle dine meddeltakere med respekt! Aldersgrense: 18+
