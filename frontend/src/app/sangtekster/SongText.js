@@ -4,6 +4,7 @@ import styles from "./sangtekster.module.css"
 
 const SongText = ({ lyricsText, headerText, backgroundColor, setCurrentSong }) => {
 
+
     const formatLyrics = (lyrics) => {
 
         const lines = lyrics.split('\n');
@@ -40,6 +41,7 @@ const SongText = ({ lyricsText, headerText, backgroundColor, setCurrentSong }) =
                 color: 'white',
                 padding: '20px',
                 height: '100vh',
+                width: '100vw',
                 overflowY: 'scroll',
             }}
         >
