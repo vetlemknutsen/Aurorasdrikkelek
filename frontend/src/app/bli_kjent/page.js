@@ -8,12 +8,12 @@ import Link from "next/link";
 
 const backend_url =  "https://aurorasdrikkelek-production.up.railway.app";
 
-export default function Snusboksen() {
+export default function bliKjent() {
     const [index, setIndex] = useState(0);
     const [cards, setCards] = useState([]);
 
     useEffect(() => {
-        fetch(`${backend_url}/api/games/Snusboksen/cards`, {
+        fetch(`${backend_url}/api/games/blikjent/cards`, {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
@@ -55,11 +55,7 @@ export default function Snusboksen() {
                                 ease: "linear",
                             }}
                         >
-                            <div className={styles.cardContent}>
-                                <div className={styles.headerText}>Hvem her...</div>
-                                <p className={styles.cardText}>{cards[index].title}</p>
-                            </div>
-
+                            <p className={styles.cardText}>{cards[index].title}</p>
                         </motion.div>
                     </>
                 )}

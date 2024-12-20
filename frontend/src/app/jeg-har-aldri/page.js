@@ -53,7 +53,10 @@ export default function JegHarAldri() {
                             ease: "linear",
                         }}
                     >
-                        <p className={styles.cardText}>{cards[index].title}</p>
+                        <div className={styles.cardContent}>
+                            <div className={styles.headerText}>Jeg har aldri</div>
+                            <p className={styles.cardText}>{cards[index].title}</p>
+                        </div>
                     </motion.div>
                 )}
             </AnimatePresence>

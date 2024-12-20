@@ -1,9 +1,8 @@
 const mongoose = require('mongoose');
 
-// Hardkodet MongoDB URI
 const mongoURI = 'mongodb://mongo:jCJwpvJhUwnhSkDltBTnhbQbNTJmzJFz@autorack.proxy.rlwy.net:59730';
 
-// Koble til MongoDB
+
 mongoose.connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => {
         console.log('Successfully connected to MongoDB');
@@ -20,8 +19,8 @@ const Card = require('./model/cards');
 async function createGameWithCards() {
         // 1. Opprett en lek
         const newGame = new Game({
-                name: "Snusboksen",
-                description: "Kaster snusboksen til hverandre",
+                name: "blikjent",
+                description: "Lek for å bli kjent",
         });
 
         const savedGame = await newGame.save();
@@ -29,83 +28,38 @@ async function createGameWithCards() {
 
         // 2. Legg til kortene til leken
         const cardData = [
-                { "title": "er den dårligste taperen?", "color": "#FABED9" },
-                { "title": "blir oftest flau?", "color": "#96E0AD" },
-                { "title": "har den sykeste fetisjen?", "color": "#84B6F4" },
-                { "title": "virket mest bitch ved første møte?", "color": "#77DD77" },
-                { "title": "hadde kledd å være emo?", "color": "#FF6961" },
-                { "title": "får de sterkeste ølbrillene?", "color": "#FFB347" },
-                { "title": "er dårligst på å bruke prevensjon?", "color": "#B19CD9" },
-                { "title": "har hatt sex på det sykeste stedet?", "color": "#974C5E" },
-                { "title": "bør utredes for en diagnose?", "color": "#008080" },
-                { "title": "har hatt lengst tørkeperiode?", "color": "#3D426B" },
-                { "title": "ville du aldri bodd med?", "color": "#F6C1B2" },
-                { "title": "har ikke drukket nok?", "color": "#BCBC82" },
-                { "title": "tåler minst alkohol?", "color": "#FABED9" },
-                { "title": "tåler mest alkohol?", "color": "#96E0AD" },
-                { "title": "er rommets Mr. Worldwide?", "color": "#84B6F4" },
-                { "title": "er lettest på tråden?", "color": "#77DD77" },
-                { "title": "sitt søsken ville du ligget med?", "color": "#FF6961" },
-                { "title": "er mor/far i gjengen?", "color": "#FFB347" },
-                { "title": "trenger å få seg noe i kveld?", "color": "#B19CD9" },
-                { "title": "vil du ha som wingman?", "color": "#974C5E" },
-                { "title": "hadde du vunnet over i en slåsskamp?", "color": "#FF00FF" },
-                { "title": "ville du hatt med på en trekant?", "color": "#3D426B" },
-                { "title": "er dårligst på matlaging?", "color": "#F6C1B2" },
-                { "title": "er mest handy?", "color": "#BCBC82" },
-                { "title": "er den verste jukseren?", "color": "#FABED9" },
-                { "title": "er klar for å få barn?", "color": "#96E0AD" },
-                { "title": "er mest gjerrig?", "color": "#84B6F4" },
-                { "title": "er rommets blikkfang?", "color": "#77DD77" },
-                { "title": "er den morsomste?", "color": "#FF6961" },
-                { "title": "er den frekkeste?", "color": "#FFB347" },
-                { "title": "spyr i kveld?", "color": "#B19CD9" },
-                { "title": "har mest nakenbilder av seg selv?", "color": "#974C5E" },
-                { "title": "er den største fylliken?", "color": "#BA110C" },
-                { "title": "forsvinner alltid på byen?", "color": "#3D426B" },
-                { "title": "gråter oftest av filmer?", "color": "#F6C1B2" },
-                { "title": "er mest sta?", "color": "#BCBC82" },
-                { "title": "lager best stemning?", "color": "#FABED9" },
-                { "title": "er størst tindertøs?", "color": "#96E0AD" },
-                { "title": "er oftest på helseklinikken?", "color": "#84B6F4" },
-                { "title": "er den siste ut av utestedet?", "color": "#77DD77" },
-                { "title": "får dele ut 10 slurker?", "color": "#FF6961" },
-                { "title": "sender de verste fylla-meldingene?", "color": "#FFB347" },
-                { "title": "bruker mest penger på byen?", "color": "#B19CD9" },
-                { "title": "dør først?", "color": "#974C5E" },
-                { "title": "er dårligst i beerpong?", "color": "#FFBF00" },
-                { "title": "har mest skjermtid?", "color": "#3D426B" },
-                { "title": "har høyest IQ?", "color": "#F6C1B2" },
-                { "title": "er den beste chuggeren?", "color": "#BCBC82" },
-                { "title": "har størst kjendisfaktor?", "color": "#FABED9" },
-                { "title": "har den mest skitne nettleserloggen?", "color": "#96E0AD" },
-                { "title": "har lettest for å klikke?", "color": "#FABED9" },
-                { "title": "ligger mest?", "color": "#96E0AD" },
-                { "title": "stønner høyest?", "color": "#84B6F4" },
-                { "title": "er mest renslig?", "color": "#77DD77" },
-                { "title": "er mest nerd?", "color": "#FF6961" },
-                { "title": "er ærligst?", "color": "#FFB347" },
-                { "title": "kunne kysset noen for en drink på byen?", "color": "#B19CD9" },
-                { "title": "kunne spydd av tre shots? (Gjerne test ut)", "color": "#974C5E" },
-                { "title": "får mest oppmerksomhet på byen?", "color": "#008080" },
-                { "title": "får flest barn?", "color": "#3D426B" },
-                { "title": "har drukket mest i løpet av livet?", "color": "#F6C1B2" },
-                { "title": "er størst dramaqueen?", "color": "#BCBC82" },
-                { "title": "må lese siste tindermelding? (Personen må ha tinder)", "color": "#FABED9" },
-                { "title": "er flinkest til å diskutere?", "color": "#96E0AD" },
-                { "title": "ville du valgt til å styre landet?", "color": "#84B6F4" },
-                { "title": "er mest woke?", "color": "#77DD77" },
-                { "title": "ser yngst ut?", "color": "#FF6961" },
-                { "title": "byr mest på seg selv?", "color": "#FFB347" },
-                { "title": "drikker for sakte?", "color": "#B19CD9" },
-                { "title": "er den største grisen?", "color": "#974C5E" },
-                { "title": "ville hatt sex først på Paradise Hotel", "color": "#FABED9" },
-                { "title": "er den beste sjekkeren?", "color": "#96E0AD" },
-                { "title": "er mest glemsk?", "color": "#84B6F4" },
-                { "title": "kommer alltid for sent?", "color": "#77DD77" },
-                { "title": "er svigermors eller svigerfars drøm?", "color": "#FF6961" },
-                { "title": "har størst sjanse for å bli arrestert?", "color": "#FFB347" }
+                    { "title": "Pek på den du tror hadde høyest snitt på videregående", "color": "#cadffc" },
+                    { "title": "Pek på den du tror er den beste kokken i rommet", "color": "#fdcddb" },
+                    { "title": "Jeg har aldri jukset på en eksamen", "color": "#fbdbce" },
+                    { "title": "Jeg har aldri skulket skolen", "color": "#d5cbed" },
+                    { "title": "Ananas på pizza. Ja eller nei?", "color": "#ffb39c" },
+                    { "title": "De som foretrekker øl fremfor vin - drikk 3 slurker", "color": "#dcedff" },
+                    { "title": "Dersom noen i rommet heter Aurora må alle drikke 5 slurker. Aurora, du chugger.", "color": "#b0d7c5" },
+                    { "title": "Jeg har aldri fullført en bok", "color": "#d1ecc1" },
+                    { "title": "Den høyeste i rommet kan dele ut antall slurker hun/han drikker selv. Drikker du 10 slurker, kan du dele ut 10!", "color": "#f9b079" },
+                    { "title": "Den eldste i rommet må ha chuggekonkurranse med den yngste!", "color": "#974C5E" },
+                    { "title": "Pek på den du tror bruker mest på byen", "color": "#008080" },
+                    { "title": "Drikk dersom du liker Cola bedre enn Pepsi", "color": "#ff00ff" },
+                    { "title": "Alle med brunt hår drikker!", "color": "#ba110c" },
+                    { "title": "Har du oransje hår? Da kan du dele ut 5 slurker", "color": "#ffbf00" },
+                    { "title": "Ville du helst kunne fly eller være usynlig?", "color": "#cadffc" },
+                    { "title": "Pek på den du tror sover mest", "color": "#fdcddb" },
+                    { "title": "Byferie eller strandferie?", "color": "#fbdbce" },
+                    { "title": "Dersom dere er i fadderuken, må alle faddere drikke!", "color": "#d5cbed" },
+                    { "title": "Jeg har aldri eid en spillkonsoll", "color": "#ffb39c" },
+                    { "title": "Kategori: Ord på spansk. Alle i rommet må si én ting innenfor kategorien inntil en person ikke klarer, denne personen tar 5 slurker. Ord kan ikke gjentas.", "color": "#dcedff" },
+                    { "title": "Pek på den du tror har høyest promille nå", "color": "#b0d7c5" },
+                    { "title": "Kategori: Matretter. Alle i rommet må si én ting innenfor kategorien inntil en person ikke klarer, denne personen tar 5 slurker. Ord kan ikke gjentas.", "color": "#d1ecc1" },
+                    { "title": "Personen(e) med det lengste etternavnet må drikke antall slurker som det er bokstaver i fornavnet", "color": "#f9b079" },
+                    { "title": "Alle fra Bergen drikker 2 slurker", "color": "#974C5E" },
+                    { "title": "Kom du for sent til vorset? Chugg resten av glasset. Skjerp deg!", "color": "#008080" },
+                    { "title": "Drikk én slurk dersom du har en deltidsjobb", "color": "#ff00ff" },
+                    { "title": "Kategori: Artister. Alle i rommet må si én ting innenfor kategorien inntil en person ikke klarer, denne personen tar 5 slurker. Ord kan ikke gjentas.", "color": "#ba110c" },
+                    { "title": "Vin er godt. Ja eller nei?", "color": "#ffbf00" },
+                    { "title": "Har noen på seg noe blått? Hvis ja, må personen til høyre for den personen drikke 3 slurker.", "color": "#cadffc" },
+                    { "title": "Personen som bor lengst unna byen's sentrum, del ut 5 slurker", "color": "#fdcddb" }
             ]
+
 
         ;
 
