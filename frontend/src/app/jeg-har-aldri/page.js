@@ -11,23 +11,42 @@ const backend_url = "https://aurorasdrikkelek-production.up.railway.app";
 export default function JegHarAldri() {
     const [index, setIndex] = useState(0);
     const [cards, setCards] = useState([]);
+    const [isCardsLoaded, setIsCardsLoaded] = useState(false);
+    const [isClient, setIsClient] = useState(false);
 
     useEffect(() => {
-        fetch('https://aurorasdrikkelek-production.up.railway.app/api/games/Jeg%20har%20aldri/cards', {
-            method: 'GET',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-        })
-            .then(response => response.json())
-            .then(data => {
-                console.log('Data mottatt:', data);
-                setCards(data.cards);
-            })
-            .catch(error => {
-                console.error('Feil under sending av forespørsel:', error);
-            });
+        setIsClient(true);
     }, []);
+
+    useEffect(() => {
+        if (isClient && cards.length === 0) {
+            fetch(`${backend_url}/api/games/Jeg%20har%20aldri/cards`, {
+                method: 'GET',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+            })
+                .then(response => response.json())
+                .then(data => {
+                    console.log('Data mottatt:', data);
+                    const shuffledCards = shuffleArray(data.cards);
+                    setCards(shuffledCards);
+                    setIsCardsLoaded(true);
+                })
+                .catch(error => {
+                    console.error('Feil under sending av forespørsel:', error);
+                });
+        }
+    }, [isClient, cards.length]);
+
+    const shuffleArray = (array) => {
+        let shuffled = [...array];
+        for (let i = shuffled.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]]; // Swap elements
+        }
+        return shuffled;
+    };
 
     const swipe = (direction) => {
         if (direction === "next" && index < cards.length - 1) {
@@ -41,7 +60,7 @@ export default function JegHarAldri() {
     return (
         <div className={styles.container}>
             <AnimatePresence>
-                {cards.length > 0 && (
+                {isCardsLoaded && cards.length > 0 && (
                     <motion.div
                         key={cards[index].id}
                         className={styles.card}
