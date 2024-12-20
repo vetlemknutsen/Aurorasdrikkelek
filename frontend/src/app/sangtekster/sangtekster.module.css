@@ -1,0 +1,84 @@
+.background {
+    background-image: url("../../../public/songbground.png");
+    background-size: 100%;
+    min-height: 100vh;
+}
+
+
+.backButton {
+
+    top: 3%;
+    padding: 5px 5px;
+    left: 2%;
+    font-size: 1rem;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+.container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #f1f1f1;
+}
+
+.songSelection {
+    text-align: center;
+    max-width: 600px;
+    width: 100%;
+}
+
+.header {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    margin-top: 20% ;
+    color: #333;
+}
+
+.songList {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.songButton {
+    padding: 15px;
+    background-color: #6AAAF7;
+    border: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+    width: 70%;
+}
+
+.songButton:hover {
+    background-color: #5a8ed5;
+}
+
+.songTextContainer {
+    width: 100%;
+    overflow: auto;
+}
+
+.backButton2 {
+    left: 1%;
+    top: 1%;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+}
