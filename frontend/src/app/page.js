@@ -19,10 +19,10 @@ export default function HomePage() {
             <div className="grid-container">
                 <Link href="/roulette" className="game-button bg-teal">Roulette</Link>
                 <Link href="/jeg-har-aldri" className="game-button exclude-font-size bg-pink">Jeg har aldri</Link>
-                <Link href={'#'} className="game-button bg-yellow">Spill 3</Link>
-                <Link href={'#'} className="game-button bg-indigo">Spill 4</Link>
-                <Link href={'#'} className="game-button bg-blue">Spill 5</Link>
-                <Link href={'#'} className="game-button bg-lime">Spill 6</Link>
+                <Link href={'#'} className="game-button bg-indigo">Hot Seat</Link>
+                <Link href="/snusboksen" className="game-button bg-lime">Snusboksen</Link>
+                <Link href={'#'} className="game-button bg-blue">Sangtekster</Link>
+                <Link href={'#'} className="game-button bg-yellow">Bli kjent!</Link>
             </div>
 
             <button
