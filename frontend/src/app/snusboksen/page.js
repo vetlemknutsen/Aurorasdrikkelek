@@ -6,7 +6,7 @@ import styles from "../jeg-har-aldri/jeg-har-aldri.module.css";
 import { ChevronLeft, ChevronRight } from "@mui/icons-material";
 import Link from "next/link";
 
-const backend_url = "https://aurorasdrikkelek-production.up.railway.app";
+const backend_url = "http://localhost:5000";
 
 export default function Snusboksen() {
     const [index, setIndex] = useState(0);
@@ -53,6 +53,7 @@ export default function Snusboksen() {
                             ease: "linear",
                         }}
                     >
+                        <p className={styles.staticText}>Hvem her..</p>
                         <p className={styles.cardText}>{cards[index].title}</p>
                     </motion.div>
                 )}

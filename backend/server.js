@@ -11,9 +11,9 @@ const corsOptions = {
     allowedHeaders: 'Content-Type,Authorization'
 };
 
-app.use(cors(corsOptions));
+app.use(cors());
 
-const dbUrl = process.env.MONGO_PUBLIC_URL;
+const dbUrl = "mongodb://mongo:jCJwpvJhUwnhSkDltBTnhbQbNTJmzJFz@autorack.proxy.rlwy.net:59730";
 
 
 mongoose.connect(dbUrl, { useNewUrlParser: true, useUnifiedTopology: true })
