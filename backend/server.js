@@ -11,7 +11,7 @@ const corsOptions = {
     allowedHeaders: 'Content-Type,Authorization'
 };
 
-app.use(cors());
+app.use(cors(corsOptions));
 
 const dbUrl = process.env.MONGO_PUBLIC_URL;
 
