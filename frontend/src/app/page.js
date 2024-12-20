@@ -22,7 +22,7 @@ export default function HomePage() {
                 <Link href={'#'} className="game-button bg-indigo">Hot Seat</Link>
                 <Link href="/snusboksen" className="game-button bg-lime">Snusboksen</Link>
                 <Link href={'#'} className="game-button bg-blue">Sangtekster</Link>
-                <Link href={'#'} className="game-button bg-yellow">Bli kjent!</Link>
+                <Link href="/bli_kjent" className="game-button bg-yellow">Bli kjent!</Link>
             </div>
 
             <button
