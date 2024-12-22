@@ -4,9 +4,13 @@ import {useEffect, useState} from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import styles from "./jeg-har-aldri.module.css";
 import { ChevronLeft, ChevronRight } from "@mui/icons-material";
+import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+
 import Link from "next/link";
 
-const backend_url = "https://aurorasdrikkelek-production.up.railway.app";
+// const backend_url = "https://aurorasdrikkelek-production.up.railway.app";
+const backend_url = "http://localhost:5000";
+
 
 export default function JegHarAldri() {
     const [index, setIndex] = useState(0);
@@ -80,7 +84,7 @@ export default function JegHarAldri() {
                 )}
             </AnimatePresence>
             <Link href="/" className={styles.backButton}>
-                Tilbake
+                <ArrowBackIcon />
             </Link>
             <div className={styles.controls}>
                 <button

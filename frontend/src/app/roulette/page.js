@@ -6,6 +6,7 @@ import {IconButton, Tooltip} from "@mui/material";
 import styles from "@/app/jeg-har-aldri/jeg-har-aldri.module.css";
 import styles2 from "./roulette.module.css"
 import Link from "next/link";
+import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 
 
 export default function Home() {
@@ -80,7 +81,7 @@ export default function Home() {
             </div>
             {!isRunning && (
                 <Link href="/" className={styles2.backButton2}>
-                    Tilbake
+                    <ArrowBackIcon />
                 </Link>
             )}
             {!isRunning && (

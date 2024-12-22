@@ -11,8 +11,8 @@
     padding: 5px 5px;
     left: 2%;
     font-size: 1rem;
-    background-color: white;
-    color: black;
+    background-color: transparent;
+    color: white;
     cursor: pointer;
     border-radius: 5px;
     border: none;
@@ -33,6 +33,10 @@
     text-align: center;
     max-width: 600px;
     width: 100%;
+    position: absolute;
+    left: 25%;
+    top: 10%;
+
 }
 
 .header {
@@ -49,6 +53,7 @@
     width: 100%;
     justify-content: center;
     align-items: center;
+    left: 50%;
 }
 
 .songButton {
@@ -73,6 +78,8 @@
     overflow: auto;
 }
 
+
+
 .backButton2 {
     left: 1%;
     top: 1%;
@@ -83,5 +90,24 @@
     cursor: pointer;
     position: absolute;
 }
+
+@media (max-width: 390px) {
+    .songSelection {
+        text-align: center;
+        max-width: 600px;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 10%;
+
+    }
+
+    .songTextContainer {
+        width: 100%;
+        overflow: auto;
+    }
+}
+
+
 
 

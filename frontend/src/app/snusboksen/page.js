@@ -5,8 +5,11 @@ import { motion, AnimatePresence } from "framer-motion";
 import styles from "../jeg-har-aldri/jeg-har-aldri.module.css";
 import { ChevronLeft, ChevronRight } from "@mui/icons-material";
 import Link from "next/link";
+import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 
-const backend_url =  "https://aurorasdrikkelek-production.up.railway.app";
+// const backend_url =  "https://aurorasdrikkelek-production.up.railway.app";
+const backend_url = "http://localhost:5000";
+
 
 export default function Snusboksen() {
     const [index, setIndex] = useState(0);
@@ -86,7 +89,7 @@ export default function Snusboksen() {
                 )}
             </AnimatePresence>
             <Link href="/" className={styles.backButton}>
-                Tilbake
+                <ArrowBackIcon />
             </Link>
             <div className={styles.controls}>
                 <button

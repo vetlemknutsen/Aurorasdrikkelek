@@ -13,13 +13,13 @@ export default function HomePage() {
 
     return (
         <div className="centered-container">
-            <img src="/champis.png" alt="Champagne" className="champagne"/>
-            <img src="/logo.png" alt="Logo" className="logo"/>
+            <img src="/logo_with_champis.png" alt="logo" className="logo"/>
+
 
             <div className="grid-container">
                 <Link href="/roulette" className="game-button bg-teal">Roulette</Link>
                 <Link href="/jeg-har-aldri" className="game-button exclude-font-size bg-pink">Jeg har aldri</Link>
-                <Link href={'#'} className="game-button bg-indigo">Hot Seat</Link>
+                <Link href="/hotseat" className="game-button bg-indigo">Hot Seat</Link>
                 <Link href="/snusboksen" className="game-button bg-lime">Snusboksen</Link>
                 <Link href="/sangtekster" className="game-button bg-blue">Sangtekster</Link>
                 <Link href="/bli_kjent" className="game-button bg-yellow">Bli kjent!</Link>

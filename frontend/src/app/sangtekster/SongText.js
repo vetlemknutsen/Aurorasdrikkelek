@@ -1,5 +1,7 @@
 import React from 'react';
 import styles from "./sangtekster.module.css"
+import ArrowBackIcon from "@mui/icons-material/ArrowBack";
+import Link from "next/link";
 
 
 const SongText = ({ lyricsText, headerText, backgroundColor, setCurrentSong }) => {
@@ -35,24 +37,24 @@ const SongText = ({ lyricsText, headerText, backgroundColor, setCurrentSong }) =
     };
 
     return (
-        <div
-            style={{
-                backgroundColor: backgroundColor,
-                color: 'white',
-                padding: '20px',
-                height: '100vh',
-                width: '100vw',
-                overflowY: 'scroll',
-            }}
-        >
-            <button
-                onClick={() => setCurrentSong(null)}
-                className={styles.backButton}
+        <div>
+            <Link href="/" className={styles.backButton2}>
+                <ArrowBackIcon />
+            </Link>
+            <div
+                style={{
+                    backgroundColor: backgroundColor,
+                    color: 'white',
+                    padding: '20px',
+                    height: '100vh',
+                    width: '100vw',
+                    overflowY: 'scroll',
+                    textAlign: "center"
+                }}
             >
-                Tilbake
-            </button>
-            <h1 style={{textAlign: 'center', marginBottom: '30px', marginTop: "5%"}}>{headerText}</h1>
-            <div>{formatLyrics(lyricsText)}</div>
+                <h1 style={{textAlign: 'center', marginBottom: '30px', marginTop: "5%"}}>{headerText}</h1>
+                <div>{formatLyrics(lyricsText)}</div>
+            </div>
         </div>
     );
 };

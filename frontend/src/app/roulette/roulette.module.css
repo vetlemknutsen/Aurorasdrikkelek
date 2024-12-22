@@ -6,19 +6,28 @@
 
 .backButton2 {
     position: absolute;
-    top: 22px;
-    left: 55px;
-    padding: 3px 6px;
+    top: 2.8%;
+    left: 3%;
     font-size: 1rem;
-    border: 2px solid black;
-    background-color: white;
+    background-color: transparent;
     color: black;
     cursor: pointer;
-    border-radius: 10px;
-    transition: background-color 0.3s;
 }
 
 .backButton2:hover {
     background-color: grey;
     color: white;
+}
+
+@media (max-width: 390px) {
+    .backButton2 {
+        position: absolute;
+        top: 2.8%;
+        left: 12%;
+        font-size: 1rem;
+        background-color: transparent;
+        color: black;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
 }
