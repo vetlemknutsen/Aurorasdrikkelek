@@ -8,8 +8,7 @@ import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 
 import Link from "next/link";
 
-// const backend_url = "https://aurorasdrikkelek-production.up.railway.app";
-const backend_url = "http://localhost:5000";
+const backend_url =  "https://aurorasdrikkelek-production.up.railway.app";
 
 
 export default function JegHarAldri() {

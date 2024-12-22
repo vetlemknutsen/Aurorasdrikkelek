@@ -7,8 +7,7 @@ import { ChevronLeft, ChevronRight } from "@mui/icons-material";
 import Link from "next/link";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 
-// const backend_url =  "https://aurorasdrikkelek-production.up.railway.app";
-const backend_url = "http://localhost:5000";
+const backend_url =  "https://aurorasdrikkelek-production.up.railway.app";
 
 
 export default function Snusboksen() {
