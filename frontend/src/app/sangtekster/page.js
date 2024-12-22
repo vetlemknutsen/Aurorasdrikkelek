@@ -4,10 +4,12 @@ import { useState } from 'react';
 import SongText from './SongText';
 import styles from "./sangtekster.module.css"
 import Link from "next/link";
+import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 
 const Home = () => {
     const [currentSong, setCurrentSong] = useState(null);
-    const backend_url = "https://aurorasdrikkelek-production.up.railway.app";
+    // const backend_url = "https://aurorasdrikkelek-production.up.railway.app";
+    const backend_url = "http://localhost:5000";
 
 
     const handleSongClick = async (songTitle) => {
@@ -28,11 +30,13 @@ const Home = () => {
 
     return (
         <div className={`${styles.container} ${currentSong === null ? styles.background : ''}`}>
+            {!currentSong && (
+            <Link href="/" className={styles.backButton2}>
+                <ArrowBackIcon />
+            </Link>
+                )}
             {!currentSong ? (
                 <div className={styles.songSelection}>
-                    <Link href="/" className={styles.backButton2}>
-                        Tilbake
-                    </Link>
                     <h1 className={styles.header}>Velg en sang!</h1>
                     <div className={styles.songList}>
                         <button
