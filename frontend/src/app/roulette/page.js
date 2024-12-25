@@ -72,7 +72,7 @@ export default function Home() {
         <div className={hasStarted ? '' : styles2.background} style={{ backgroundColor: color, height: "100vh", display: "flex", justifyContent: "center", alignItems: "center" }}>
             <div style={{ textAlign: "center" }}>
                 {!isRunning ? (
-                    <button onClick={startRoulette} style={{ padding: "20px", fontSize: "20px", borderRadius: "500px" }}>
+                    <button onClick={startRoulette} style={{ padding: "20px", fontSize: "20px", borderRadius: "500px", fontFamily: 'Jumble, sans-serif' }}>
                         Start
                     </button>
                 ) : (
