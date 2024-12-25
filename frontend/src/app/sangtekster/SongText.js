@@ -52,10 +52,11 @@ const SongText = ({ lyricsText, headerText, backgroundColor, setCurrentSong }) =
                     height: '100vh',
                     width: '100vw',
                     overflowY: 'scroll',
-                    textAlign: "center"
+                    textAlign: "center",
+                    fontFamily: 'Arial, Helvetica, sans-serif'
                 }}
             >
-                <h1 style={{textAlign: 'center', marginBottom: '30px', marginTop: "5%"}}>{headerText}</h1>
+                <h1 style={{textAlign: 'center', marginBottom: '30px', marginTop: "5%", fontFamily: 'Jumble, sans-serif'}}>{headerText}</h1>
                 <div>{formatLyrics(lyricsText)}</div>
             </div>
         </div>
