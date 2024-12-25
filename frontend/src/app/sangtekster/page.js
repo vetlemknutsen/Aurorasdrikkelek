@@ -11,6 +11,7 @@ const Home = () => {
     const backend_url =  "https://aurorasdrikkelek-production.up.railway.app";
 
 
+
     const handleSongClick = async (songTitle) => {
         try {
             const encodedTitle = encodeURIComponent(songTitle);
@@ -40,19 +41,19 @@ const Home = () => {
                     <div className={styles.songList}>
                         <button
                             onClick={() => handleSongClick("Mamma Mia")}
-                            className={styles.songButton}
+                            className={`${styles.songButton} ${styles.songButtonMia}`}
                         >
                             Mamma Mia
                         </button>
                         <button
                             onClick={() => handleSongClick("Lay All Your Love On Me")}
-                            className={styles.songButton}
+                            className={`${styles.songButton} ${styles.songButtonLay}`}
                         >
                             Lay All Your Love On Me
                         </button>
                         <button
                             onClick={() => handleSongClick("Take On Me")}
-                            className={styles.songButton}
+                            className={`${styles.songButton} ${styles.songButtonTake}`}
                         >
                             Take On Me
                         </button>

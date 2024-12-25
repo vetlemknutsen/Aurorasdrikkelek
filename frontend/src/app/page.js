@@ -17,8 +17,12 @@ export default function HomePage() {
 
 
             <div className="grid-container">
-                <Link href="/roulette" className="game-button bg-teal">Roulette</Link>
-                <Link href="/jeg-har-aldri" className="game-button exclude-font-size bg-pink">Jeg har aldri</Link>
+                <Link href="/roulette" className="game-button bg-teal">
+                    Roulette
+                </Link>
+                <Link href="/jeg-har-aldri" className="game-button exclude-font-size bg-pink">
+                    Jeg har aldri
+                </Link>
                 <Link href="/hotseat" className="game-button bg-indigo">Hot Seat</Link>
                 <Link href="/snusboksen" className="game-button bg-lime">Snusboksen</Link>
                 <Link href="/sangtekster" className="game-button bg-blue">Sangtekster</Link>
