@@ -38,9 +38,12 @@ const SongText = ({ lyricsText, headerText, backgroundColor, setCurrentSong }) =
 
     return (
         <div>
-            <Link href="/" className={styles.backButton2}>
-                <ArrowBackIcon />
-            </Link>
+            <button
+                onClick={() => setCurrentSong(null)}
+                className={styles.backButton2}
+            >
+                <ArrowBackIcon/>
+            </button>
             <div
                 style={{
                     backgroundColor: backgroundColor,

@@ -21,8 +21,8 @@
 
 .container {
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
     height: 100vh;
     width: 100vw;
@@ -34,9 +34,7 @@
     max-width: 600px;
     width: 100%;
     position: absolute;
-    left: 25%;
     top: 10%;
-
 }
 
 .header {
@@ -69,9 +67,32 @@
     width: 70%;
 }
 
-.songButton:hover {
-    background-color: #5a8ed5;
+.songButtonMia {
+    background-color: #2F88CE;
 }
+
+.songButtonMia:hover {
+    background-color: #256CA5;
+}
+
+.songButtonLay {
+    background-color: #FBA085;
+}
+
+.songButtonLay:hover {
+    background-color: #C77F6B;
+}
+
+.songButtonTake {
+    background-color: #a4d179;
+}
+
+.songButtonTake:hover {
+    background-color: #82AC61;
+}
+
+
+
 
 .songTextContainer {
     width: 100%;
@@ -89,6 +110,7 @@
     color: white;
     cursor: pointer;
     position: absolute;
+    border: none;
 }
 
 @media (max-width: 390px) {
