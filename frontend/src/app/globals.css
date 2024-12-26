@@ -277,3 +277,54 @@ a {
   }
 }
 
+@media (max-width: 432px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .game-button {
+    font-size: 1.1rem;
+    padding: 10px;
+    height: 50px;
+  }
+
+  .game-button:not(.exclude-font-size) {
+    font-size: 1.3rem;
+  }
+
+  .grid-container {
+    gap: 2rem;
+    row-gap: 5rem;
+    margin-top: 0;
+  }
+
+  .logo {
+    width: 75%;
+    left: 53%;
+  }
+
+  .info-button {
+    width: 35px;
+    height: 35px;
+    font-size: 22px;
+
+  }
+
+  .info-box {
+    position: absolute;
+    top: 6%;
+    right: 5%;
+    left: 0;
+    padding: 24px;
+    background-color: white;
+    color: black;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transform: scale(1);
+    transition: transform 0.3s ease;
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
+  }
+}
+
