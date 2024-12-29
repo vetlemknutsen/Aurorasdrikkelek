@@ -15,6 +15,7 @@ export default function Snusboksen() {
     const [cards, setCards] = useState([]);
     const [isCardsLoaded, setIsCardsLoaded] = useState(false);
     const [isClient, setIsClient] = useState(false);
+    const [containerBgColor, setContainerBgColor] = useState("white");
 
 
     useEffect(() => {
@@ -59,10 +60,15 @@ export default function Snusboksen() {
         }
     };
 
+    useEffect(() => {
+        if (cards[index - 1]) {
+            setContainerBgColor(cards[index - 1].color);
+        }
+    }, [index, cards]);
 
 
     return (
-        <div className={styles.container}>
+        <div className={styles.container} style={{ backgroundColor: containerBgColor }}>
             <AnimatePresence>
                 {isCardsLoaded && cards.length > 0 && (
                     <>

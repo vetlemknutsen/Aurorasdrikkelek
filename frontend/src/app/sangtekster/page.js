@@ -10,14 +10,13 @@ const Home = () => {
     const [currentSong, setCurrentSong] = useState(null);
     const backend_url =  "https://aurorasdrikkelek-production.up.railway.app";
 
-
-
     const handleSongClick = async (songTitle) => {
         try {
             const encodedTitle = encodeURIComponent(songTitle);
             const response = await fetch(`${backend_url}/api/songs/${encodedTitle}`);
             if (response.ok) {
                 const song = await response.json();
+                console.log(song)
                 setCurrentSong(song);
             } else {
                 console.error("Failed to fetch song data");
