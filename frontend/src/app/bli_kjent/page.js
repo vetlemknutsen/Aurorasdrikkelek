@@ -14,6 +14,8 @@ export default function bliKjent() {
     const [cards, setCards] = useState([]);
     const [isCardsLoaded, setIsCardsLoaded] = useState(false);
     const [isClient, setIsClient] = useState(false);
+    const [containerBgColor, setContainerBgColor] = useState("white");
+
 
     useEffect(() => {
         setIsClient(true);
@@ -57,9 +59,15 @@ export default function bliKjent() {
         }
     };
 
+    useEffect(() => {
+        if (cards[index - 1]) {
+            setContainerBgColor(cards[index - 1].color);
+        }
+    }, [index, cards]);
+
 
     return (
-        <div className={styles.container}>
+        <div className={styles.container} style={{ backgroundColor: containerBgColor }}>
             <AnimatePresence>
                 {isCardsLoaded && cards.length > 0 && (
                     <>
@@ -70,8 +78,9 @@ export default function bliKjent() {
                             style={{backgroundColor: cards[index].color}}
                             initial={{x: 300, opacity: 0}}
                             animate={{x: 0, opacity: 1}}
+                            exit={{x: 300, opacity: 0}}
                             transition={{
-                                duration: 0.2,
+                                duration: 0.3,
                                 ease: "linear",
                             }}
                         >

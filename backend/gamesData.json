@@ -1,0 +1,914 @@
+{
+  "Jeg har aldri": {
+    "cards": [
+      {
+        "id": 1,
+        "title": "hatt et one-night stand",
+        "color": "#fabed9"
+      },
+      {
+        "id": 2,
+        "title": "brukt noens tannbørste uten å si ifra",
+        "color": "#96e0ad"
+      },
+      {
+        "id": 3,
+        "title": "løyet om alderen min for å imponere noen",
+        "color": "#84b6f4"
+      },
+      {
+        "id": 4,
+        "title": "flørtet med noen for å få drikke",
+        "color": "#77dd77"
+      },
+      {
+        "id": 5,
+        "title": "spist mat som falt på gulvet",
+        "color": "#ff6961"
+      },
+      {
+        "id": 6,
+        "title": "latet som jeg har sett en film/TV-serie for å passe inn i en samtale",
+        "color": "#ffb347"
+      },
+      {
+        "id": 7,
+        "title": "kysset noen av samme kjønn",
+        "color": "#b19cd9"
+      },
+      {
+        "id": 8,
+        "title": "hatt et crush på noen i dette rommet",
+        "color": "#974C5E"
+      },
+      {
+        "id": 9,
+        "title": "dusjet med noen av det motsatte kjønn",
+        "color": "#008080"
+      },
+      {
+        "id": 10,
+        "title": "spist noe fra søplekassen",
+        "color": "#3D426B"
+      },
+      {
+        "id": 11,
+        "title": "tatt en tatovering",
+        "color": "#F6C1B2"
+      },
+      {
+        "id": 12,
+        "title": "brukt falsk legitimasjon",
+        "color": "#BCBC82"
+      },
+      {
+        "id": 13,
+        "title": "kysset noen 10 år eldre",
+        "color": "#b784a7"
+      },
+      {
+        "id": 14,
+        "title": "liket et gammelt instagram-bilde",
+        "color": "#ff6961"
+      },
+      {
+        "id": 15,
+        "title": "jukset på eksamen",
+        "color": "#77dd77"
+      },
+      {
+        "id": 16,
+        "title": "blitt kastet ut av et utested",
+        "color": "#84b6f4"
+      },
+      {
+        "id": 17,
+        "title": "sett Breaking Bad",
+        "color": "#b19cd9"
+      },
+      {
+        "id": 18,
+        "title": "nakenbadet",
+        "color": "#fabed9"
+      },
+      {
+        "id": 19,
+        "title": "stalket snapscore",
+        "color": "#96e0ad"
+      },
+      {
+        "id": 20,
+        "title": "vært gutt",
+        "color": "#ffb347"
+      },
+      {
+        "id": 21,
+        "title": "vært jente",
+        "color": "#974C5E"
+      },
+      {
+        "id": 22,
+        "title": "hatt promille på skolen",
+        "color": "#ff00ff"
+      },
+      {
+        "id": 23,
+        "title": "smakt en kondom",
+        "color": "#3D426B"
+      },
+      {
+        "id": 24,
+        "title": "vært på tv",
+        "color": "#F6C1B2"
+      },
+      {
+        "id": 25,
+        "title": "besvimt",
+        "color": "#BCBC82"
+      },
+      {
+        "id": 26,
+        "title": "likt Hotel Cæsar",
+        "color": "#b784a7"
+      },
+      {
+        "id": 27,
+        "title": "drukket meg full alene",
+        "color": "#ff6961"
+      },
+      {
+        "id": 28,
+        "title": "fått en bot",
+        "color": "#77dd77"
+      },
+      {
+        "id": 29,
+        "title": "løyet i `Jeg har aldri`",
+        "color": "#84b6f4"
+      },
+      {
+        "id": 30,
+        "title": "fått sparken",
+        "color": "#b19cd9"
+      },
+      {
+        "id": 31,
+        "title": "brukt noen andre sin barberhøvel",
+        "color": "#fabed9"
+      },
+      {
+        "id": 32,
+        "title": "kastet opp får å kunne drikke mer",
+        "color": "#ffb347"
+      },
+      {
+        "id": 33,
+        "title": "flørtet med en kollega",
+        "color": "#974C5E"
+      },
+      {
+        "id": 34,
+        "title": "fått bot på offentlig transport",
+        "color": "#3D426B"
+      },
+      {
+        "id": 35,
+        "title": "sneket meg inn på byen",
+        "color": "#F6C1B2"
+      },
+      {
+        "id": 36,
+        "title": "mistet mobilen",
+        "color": "#BCBC82"
+      },
+      {
+        "id": 37,
+        "title": "kastet opp på noen",
+        "color": "#b784a7"
+      },
+      {
+        "id": 38,
+        "title": "fått blackout",
+        "color": "#96e0ad"
+      },
+      {
+        "id": 39,
+        "title": "skulket skolen",
+        "color": "#77dd77"
+      },
+      {
+        "id": 40,
+        "title": "faket en orgasme",
+        "color": "#ffbf00"
+      },
+      {
+        "id": 41,
+        "title": "dansa på bordet på Heidis",
+        "color": "#fabed9"
+      },
+      {
+        "id": 42,
+        "title": "twerka på byen",
+        "color": "#96e0ad"
+      },
+      {
+        "id": 43,
+        "title": "kjøpt klær jeg aldri har brukt",
+        "color": "#84b6f4"
+      },
+      {
+        "id": 44,
+        "title": "blitt grøtbror/søster med en venn",
+        "color": "#77dd77"
+      },
+      {
+        "id": 45,
+        "title": "vært på fylletur i utlandet",
+        "color": "#ff6961"
+      },
+      {
+        "id": 46,
+        "title": "gitt videre en gave jeg har fått",
+        "color": "#ffb347"
+      },
+      {
+        "id": 47,
+        "title": "tettet et toalett",
+        "color": "#b19cd9"
+      },
+      {
+        "id": 48,
+        "title": "vært utenfor Europa",
+        "color": "#974C5E"
+      },
+      {
+        "id": 49,
+        "title": "krasjet en bil",
+        "color": "#008080"
+      },
+      {
+        "id": 50,
+        "title": "løyet om alderen min",
+        "color": "#3D426B"
+      },
+      {
+        "id": 51,
+        "title": "sett noen i dette rommet naken",
+        "color": "#F6C1B2"
+      },
+      {
+        "id": 52,
+        "title": "nakenbadet",
+        "color": "#BCBC82"
+      },
+      {
+        "id": 53,
+        "title": "brukket et ben",
+        "color": "#b784a7"
+      },
+      {
+        "id": 54,
+        "title": "tatt tre eller fler shots på rad",
+        "color": "#ff6961"
+      },
+      {
+        "id": 55,
+        "title": "brukt noen andres tannbørste",
+        "color": "#77dd77"
+      },
+      {
+        "id": 56,
+        "title": "gått en uke uten å dusje",
+        "color": "#84b6f4"
+      },
+      {
+        "id": 57,
+        "title": "slettet et innlegg på grunn av for få likes",
+        "color": "#fabed9"
+      },
+      {
+        "id": 58,
+        "title": "sett ferdig en serie på én dag",
+        "color": "#96e0ad"
+      },
+      {
+        "id": 59,
+        "title": "donert klær til Fretex",
+        "color": "#84b6f4"
+      },
+      {
+        "id": 60,
+        "title": "tatt alkohol av foreldrene mine",
+        "color": "#77dd77"
+      },
+      {
+        "id": 61,
+        "title": "klippet eget hår",
+        "color": "#ff6961"
+      },
+      {
+        "id": 62,
+        "title": "hatt regulering",
+        "color": "#ffb347"
+      },
+      {
+        "id": 63,
+        "title": "haiket",
+        "color": "#b19cd9"
+      },
+      {
+        "id": 64,
+        "title": "besvimt",
+        "color": "#974C5E"
+      },
+      {
+        "id": 65,
+        "title": "skutt med våpen",
+        "color": "#008080"
+      },
+      {
+        "id": 66,
+        "title": "ringt politiet",
+        "color": "#3D426B"
+      },
+      {
+        "id": 67,
+        "title": "googlet meg selv",
+        "color": "#F6C1B2"
+      },
+      {
+        "id": 68,
+        "title": "fått brannalarmen til å gå",
+        "color": "#BCBC82"
+      },
+      {
+        "id": 69,
+        "title": "sovet på gulvet",
+        "color": "#b784a7"
+      },
+      {
+        "id": 70,
+        "title": "ødelagt noe på vors",
+        "color": "#ff6961"
+      },
+      {
+        "id": 71,
+        "title": "jogget over 5km",
+        "color": "#77dd77"
+      },
+      {
+        "id": 72,
+        "title": "blitt avvist på byen",
+        "color": "#84b6f4"
+      },
+      {
+        "id": 73,
+        "title": "ligget med flere enn én person på en dag",
+        "color": "#84b6f4"
+      },
+      {
+        "id": 74,
+        "title": "drukket over 60%",
+        "color": "#b19cd9"
+      }
+    ]
+  },
+  "Snusboksen": {
+    "cards": [
+      {
+        "id": 1,
+        "title": "er den dårligste taperen?",
+        "color": "#fabed9"
+      },
+      {
+        "id": 2,
+        "title": "blir oftest flau?",
+        "color": "#96e0ad"
+      },
+      {
+        "id": 3,
+        "title": "har den sykeste fetisjen?",
+        "color": "#84b6f4"
+      },
+      {
+        "id": 4,
+        "title": "virket mest bitch ved første møte?",
+        "color": "#77dd77"
+      },
+      {
+        "id": 5,
+        "title": "hadde kledd å være emo?",
+        "color": "#ff6961"
+      },
+      {
+        "id": 6,
+        "title": "får de sterkeste ølbrillene?",
+        "color": "#ffb347"
+      },
+      {
+        "id": 7,
+        "title": "er dårligst på å bruke prevensjon?",
+        "color": "#b19cd9"
+      },
+      {
+        "id": 8,
+        "title": "har hatt sex på det sykeste stedet?",
+        "color": "#974C5E"
+      },
+      {
+        "id": 9,
+        "title": "bør utredes for en diagnose?",
+        "color": "#008080"
+      },
+      {
+        "id": 10,
+        "title": "har hatt lengst tørkeperiode?",
+        "color": "#3D426B"
+      },
+      {
+        "id": 11,
+        "title": "ville du aldri bodd med?",
+        "color": "#F6C1B2"
+      },
+      {
+        "id": 12,
+        "title": "har ikke drukket nok?",
+        "color": "#BCBC82"
+      },
+      {
+        "id": 13,
+        "title": "tåler minst alkohol?",
+        "color": "#fabed9"
+      },
+      {
+        "id": 14,
+        "title": "tåler mest alkohol?",
+        "color": "#96e0ad"
+      },
+      {
+        "id": 15,
+        "title": "er rommets Mr. Worldwide?",
+        "color": "#84b6f4"
+      },
+      {
+        "id": 16,
+        "title": "er lettest på tråden?",
+        "color": "#77dd77"
+      },
+      {
+        "id": 17,
+        "title": "sitt søsken ville du ligget med?",
+        "color": "#ff6961"
+      },
+      {
+        "id": 18,
+        "title": "er mor/far i gjengen?",
+        "color": "#ffb347"
+      },
+      {
+        "id": 19,
+        "title": "trenger å få seg noe i kveld?",
+        "color": "#b19cd9"
+      },
+      {
+        "id": 20,
+        "title": "vil du ha som wingman?",
+        "color": "#974C5E"
+      },
+      {
+        "id": 21,
+        "title": "hadde du vunnet over i en slåsskamp?",
+        "color": "#ff00ff"
+      },
+      {
+        "id": 22,
+        "title": "ville du hatt med på en trekant?",
+        "color": "#3D426B"
+      },
+      {
+        "id": 23,
+        "title": "er dårligst på matlaging?",
+        "color": "#F6C1B2"
+      },
+      {
+        "id": 24,
+        "title": "er mest handy?",
+        "color": "#BCBC82"
+      },
+      {
+        "id": 25,
+        "title": "er den verste jukseren?",
+        "color": "#fabed9"
+      },
+      {
+        "id": 26,
+        "title": "er klar for å få barn?",
+        "color": "#96e0ad"
+      },
+      {
+        "id": 27,
+        "title": "er mest gjerrig?",
+        "color": "#84b6f4"
+      },
+      {
+        "id": 28,
+        "title": "er rommets blikkfang?",
+        "color": "#77dd77"
+      },
+      {
+        "id": 29,
+        "title": "er den morsomste?",
+        "color": "#ff6961"
+      },
+      {
+        "id": 30,
+        "title": "er den frekkeste?",
+        "color": "#ffb347"
+      },
+      {
+        "id": 31,
+        "title": "spyr i kveld?",
+        "color": "#b19cd9"
+      },
+      {
+        "id": 32,
+        "title": "har mest nakenbilder av seg selv?",
+        "color": "#974C5E"
+      },
+      {
+        "id": 33,
+        "title": "er den største fylliken?",
+        "color": "#ba110c"
+      },
+      {
+        "id": 34,
+        "title": "forsvinner alltid på byen?",
+        "color": "#3D426B"
+      },
+      {
+        "id": 35,
+        "title": "gråter oftest av filmer?",
+        "color": "#F6C1B2"
+      },
+      {
+        "id": 36,
+        "title": "er mest sta?",
+        "color": "#BCBC82"
+      },
+      {
+        "id": 37,
+        "title": "lager best stemning?",
+        "color": "#fabed9"
+      },
+      {
+        "id": 38,
+        "title": "er størst tindertøs?",
+        "color": "#96e0ad"
+      },
+      {
+        "id": 39,
+        "title": "er oftest på helseklinikken?",
+        "color": "#84b6f4"
+      },
+      {
+        "id": 40,
+        "title": "er den siste ut av utestedet?",
+        "color": "#77dd77"
+      },
+      {
+        "id": 41,
+        "title": "får dele ut 10 slurker?",
+        "color": "#ff6961"
+      },
+      {
+        "id": 42,
+        "title": "sender de verste fylla-meldingene?",
+        "color": "#ffb347"
+      },
+      {
+        "id": 43,
+        "title": "bruker mest penger på byen?",
+        "color": "#b19cd9"
+      },
+      {
+        "id": 44,
+        "title": "dør først?",
+        "color": "#974C5E"
+      },
+      {
+        "id": 45,
+        "title": "er dårligst i beerpong?",
+        "color": "#ffbf00"
+      },
+      {
+        "id": 46,
+        "title": "har mest skjermtid?",
+        "color": "#3D426B"
+      },
+      {
+        "id": 47,
+        "title": "har høyest IQ?",
+        "color": "#F6C1B2"
+      },
+      {
+        "id": 48,
+        "title": "er den beste chuggeren?",
+        "color": "#BCBC82"
+      },
+      {
+        "id": 49,
+        "title": "har størst kjendisfaktor?",
+        "color": "#fabed9"
+      },
+      {
+        "id": 50,
+        "title": "har den mest skitne nettleserloggen?",
+        "color": "#96e0ad"
+      },
+      {
+        "id": 51,
+        "title": "har lettest for å klikke?",
+        "color": "#fabed9"
+      },
+      {
+        "id": 52,
+        "title": "ligger mest?",
+        "color": "#96e0ad"
+      },
+      {
+        "id": 53,
+        "title": "stønner høyest?",
+        "color": "#84b6f4"
+      },
+      {
+        "id": 54,
+        "title": "er mest renslig?",
+        "color": "#77dd77"
+      },
+      {
+        "id": 55,
+        "title": "er mest nerd?",
+        "color": "#ff6961"
+      },
+      {
+        "id": 56,
+        "title": "er ærligst?",
+        "color": "#ffb347"
+      },
+      {
+        "id": 57,
+        "title": "kunne kysset noen for en drink på byen?",
+        "color": "#b19cd9"
+      },
+      {
+        "id": 58,
+        "title": "kunne spydd av tre shots? (Gjerne test ut)",
+        "color": "#974C5E"
+      },
+      {
+        "id": 59,
+        "title": "får mest oppmerksomhet på byen?",
+        "color": "#008080"
+      },
+      {
+        "id": 60,
+        "title": "får flest barn?",
+        "color": "#3D426B"
+      },
+      {
+        "id": 61,
+        "title": "har drukket mest i løpet av livet?",
+        "color": "#F6C1B2"
+      },
+      {
+        "id": 62,
+        "title": "er størst dramaqueen?",
+        "color": "#BCBC82"
+      },
+      {
+        "id": 63,
+        "title": "må lese siste tindermelding? (Personen må ha tinder)",
+        "color": "#fabed9"
+      },
+      {
+        "id": 64,
+        "title": "er flinkest til å diskutere?",
+        "color": "#96e0ad"
+      },
+      {
+        "id": 65,
+        "title": "ville du valgt til å styre landet?",
+        "color": "#84b6f4"
+      },
+      {
+        "id": 66,
+        "title": "er mest woke?",
+        "color": "#77dd77"
+      },
+      {
+        "id": 67,
+        "title": "ser yngst ut?",
+        "color": "#ff6961"
+      },
+      {
+        "id": 68,
+        "title": "byr mest på seg selv?",
+        "color": "#ffb347"
+      },
+      {
+        "id": 69,
+        "title": "drikker for sakte?",
+        "color": "#b19cd9"
+      },
+      {
+        "id": 70,
+        "title": "er den største grisen?",
+        "color": "#974C5E"
+      },
+      {
+        "id": 71,
+        "title": "ville hatt sex først på Paradise Hotel",
+        "color": "#fabed9"
+      },
+      {
+        "id": 72,
+        "title": "er den beste sjekkeren?",
+        "color": "#96e0ad"
+      },
+      {
+        "id": 73,
+        "title": "er mest glemsk?",
+        "color": "#84b6f4"
+      },
+      {
+        "id": 74,
+        "title": "kommer alltid for sent?",
+        "color": "#77dd77"
+      },
+      {
+        "id": 75,
+        "title": "er svigermors eller svigerfars drøm?",
+        "color": "#ff6961"
+      },
+      {
+        "id": 76,
+        "title": "har størst sjanse for å bli arrestert?",
+        "color": "#ffb347"
+      }
+    ]
+  },
+  "blikjent": {
+    "cards": [
+      {
+        "id": 1,
+        "title": "Pek på den du tror hadde høyest snitt på videregående",
+        "color": "#cadffc"
+      },
+      {
+        "id": 2,
+        "title": "Pek på den du tror er den beste kokken i rommet",
+        "color": "#fdcddb"
+      },
+      {
+        "id": 3,
+        "title": "Jeg har aldri jukset på en eksamen",
+        "color": "#fbdbce"
+      },
+      {
+        "id": 4,
+        "title": "Jeg har aldri skulket skolen",
+        "color": "#d5cbed"
+      },
+      {
+        "id": 5,
+        "title": "Ananas på pizza. Ja eller nei?",
+        "color": "#ffb39c"
+      },
+      {
+        "id": 6,
+        "title": "De som foretrekker øl fremfor vin - drikk 3 slurker",
+        "color": "#dcedff"
+      },
+      {
+        "id": 7,
+        "title": "Dersom noen i rommet heter Aurora må alle drikke 5 slurker. Aurora, du chugger.",
+        "color": "#b0d7c5"
+      },
+      {
+        "id": 8,
+        "title": "Jeg har aldri fullført en bok",
+        "color": "#d1ecc1"
+      },
+      {
+        "id": 9,
+        "title": "Den høyeste i rommet kan dele ut antall slurker hun/han drikker selv. Drikker du 10 slurker, kan du dele ut 10!",
+        "color": "#f9b079"
+      },
+      {
+        "id": 10,
+        "title": "Den eldste i rommet må ha chuggekonkurranse med den yngste!",
+        "color": "#974C5E"
+      },
+      {
+        "id": 11,
+        "title": "Pek på den du tror bruker mest på byen",
+        "color": "#008080"
+      },
+      {
+        "id": 12,
+        "title": "Drikk dersom du liker Cola bedre enn Pepsi",
+        "color": "#ff00ff"
+      },
+      {
+        "id": 13,
+        "title": "Alle med brunt hår drikker!",
+        "color": "#ba110c"
+      },
+      {
+        "id": 14,
+        "title": "Har du oransje hår? Da kan du dele ut 5 slurker",
+        "color": "#ffbf00"
+      },
+      {
+        "id": 15,
+        "title": "Ville du helst kunne fly eller være usynlig?",
+        "color": "#cadffc"
+      },
+      {
+        "id": 16,
+        "title": "Pek på den du tror sover mest",
+        "color": "#fdcddb"
+      },
+      {
+        "id": 17,
+        "title": "Byferie eller strandferie?",
+        "color": "#fbdbce"
+      },
+      {
+        "id": 18,
+        "title": "Dersom dere er i fadderuken, må alle faddere drikke!",
+        "color": "#d5cbed"
+      },
+      {
+        "id": 19,
+        "title": "Jeg har aldri eid en spillkonsoll",
+        "color": "#ffb39c"
+      },
+      {
+        "id": 20,
+        "title": "Kategori: Ord på spansk. Alle i rommet må si én ting innenfor kategorien inntil en person ikke klarer, denne personen tar 5 slurker. Ord kan ikke gjentas.",
+        "color": "#dcedff"
+      },
+      {
+        "id": 21,
+        "title": "Pek på den du tror har høyest promille nå",
+        "color": "#b0d7c5"
+      },
+      {
+        "id": 22,
+        "title": "Kategori: Matretter. Alle i rommet må si én ting innenfor kategorien inntil en person ikke klarer, denne personen tar 5 slurker. Ord kan ikke gjentas.",
+        "color": "#d1ecc1"
+      },
+      {
+        "id": 23,
+        "title": "Personen(e) med det lengste etternavnet må drikke antall slurker som det er bokstaver i fornavnet",
+        "color": "#f9b079"
+      },
+      {
+        "id": 24,
+        "title": "Alle fra Bergen drikker 2 slurker",
+        "color": "#974C5E"
+      },
+      {
+        "id": 25,
+        "title": "Kom du for sent til vorset? Chugg resten av glasset. Skjerp deg!",
+        "color": "#008080"
+      },
+      {
+        "id": 26,
+        "title": "Drikk én slurk dersom du har en deltidsjobb",
+        "color": "#ff00ff"
+      },
+      {
+        "id": 27,
+        "title": "Kategori: Artister. Alle i rommet må si én ting innenfor kategorien inntil en person ikke klarer, denne personen tar 5 slurker. Ord kan ikke gjentas.",
+        "color": "#ba110c"
+      },
+      {
+        "id": 28,
+        "title": "Vin er godt. Ja eller nei?",
+        "color": "#ffbf00"
+      },
+      {
+        "id": 29,
+        "title": "Har noen på seg noe blått? Hvis ja, må personen til høyre for den personen drikke 3 slurker.",
+        "color": "#cadffc"
+      },
+      {
+        "id": 30,
+        "title": "Personen som bor lengst unna byen's sentrum, del ut 5 slurker",
+        "color": "#fdcddb"
+      }
+    ]
+  }
+}
