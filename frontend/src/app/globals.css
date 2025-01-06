@@ -52,6 +52,14 @@ a {
   margin-top: 20%;
 }
 
+.scale-effect {
+  transition: transform 0.3s ease;
+}
+
+.scale-effect:hover {
+  transform: scale(1.2);
+}
+
 .game-button {
   display: flex;
   justify-content: center;
@@ -67,6 +75,66 @@ a {
   height: 80px;
 }
 
+.game-button:active {
+  transform: scale(1.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.stopwatch-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5%;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  height: 100%;
+  width: 50%;
+}
+
+.stopwatch-button:active {
+  transform: scale(1.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.stopwatch-button-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.stopwatch-button.bg-green {
+  background-color: #03C03C;
+}
+
+.stopwatch-button.bg-pink {
+  background-color: #ff645c;
+}
+
+
+.stopwatch-button.bg-yellow {
+  background-color: #FDDD5C;
+}
+
+.stopwatch-time {
+  font-size: 5rem;
+  font-weight: bold;
+  text-align: center;
+  color: #333;
+  margin-top: -40%;
+}
+
+
+.stopwatch-diff {
+  font-size: 2rem;
+  text-align: center;
+  color: #333;
+}
 
 
 .game-button.bg-teal {
@@ -161,10 +229,16 @@ a {
 .logo {
   top: 5%;
   left: 50%;
-  transform: translateX(-50%);
   position: absolute;
   height: auto;
+  transform: translate(-50%);
+  transition: transform 0.3s ease;
+  transform-origin: center center;
 
+}
+
+.logo:active {
+  transform: translate(-50%) scale(1.2);
 }
 
 
@@ -237,7 +311,7 @@ a {
 
   .logo {
     width: 75%;
-    left: 53%;
+    left: 10%;
   }
 
   .info-button {
