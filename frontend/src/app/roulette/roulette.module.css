@@ -22,8 +22,8 @@
 @media (max-width: 390px) {
     .backButton2 {
         position: absolute;
-        top: 2.8%;
-        left: 12%;
+        top: 2%;
+        left: 2%;
         font-size: 1rem;
         background-color: transparent;
         color: black;

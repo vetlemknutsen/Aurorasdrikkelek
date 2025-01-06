@@ -91,8 +91,8 @@ export default function Home() {
                     onClick={toggleInfo}
                     style={{
                         position: "absolute",
-                        top: "25px",
-                        left: "20px",
+                        top: "20px",
+                        left: "40px",
                         color: "black",
                         backgroundColor: "white",
 
